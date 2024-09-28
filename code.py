@@ -3,6 +3,7 @@ import flet as ft
 
 def main(page: ft.Page):
     app = BJ()
+    Basura = []
     
     app.iniciar_ventana(page)
     app.agregar_texto("Casino\n")
@@ -41,17 +42,7 @@ def main(page: ft.Page):
         lista_jugadores[i].append(texto_saldo)
         
         print(lista_jugadores[0])
-        
-    app.jugador_pide_carta(lista_jugadores[0], lista_jugadores[0][4], lista_jugadores[0][5], "Puntaje: ")
-    app.agregar_boton_jugador_pide_carta(
-            f"Pedir carta {lista_jugadores[0][0]}",
-            lista_jugadores[0],
-            lista_jugadores[0][4],  # El row de las cartas del jugador
-            lista_jugadores[0][5],  # El texto del puntaje
-            "Puntaje: "
-        )
     
-    app.agregar_apuesta(lista_jugadores[0], lista_jugadores[0][6])
-
+    
     
 ft.app(target=main)

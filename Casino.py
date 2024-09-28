@@ -53,6 +53,7 @@ def CierreApuestas():
         carta_abajo_imagen.update()
     
         CartasCasino[1] = valorCartaAbajo
+        return CartasCasino
         # Recalcular el puntaje
     #    nuevo_puntaje = Shuffle.CalcularPuntaje(CartasCasino)
 
